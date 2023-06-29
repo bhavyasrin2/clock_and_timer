@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="clockstyle.css" />
+    <title>clock</title>
+  </head>
+  <body>
+    <div class="settimer">
+      <div class="animate-character"></div>
+      <div class="timer">
+        <div class="displayTime">00 : 00 : 00</div>
+        <div class="display">TIME OUT!!</div>
+        <div class="buttons">
+          <img
+            src="pause.png"
+            width="70px"
+            height="70px"
+            onclick="stoptime()"
+          />
+          <img
+            src="start.png"
+            width="70px"
+            height="70px"
+            onclick="starttime()"
+          />
+          <img
+            src="reset.png"
+            width="70px"
+            height="70px"
+            onclick="resettime()"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="clock">
+      <div class="numbers">
+        <div class="twelve">12</div>
+        <div class="three">3</div>
+        <div class="six">6</div>
+        <div class="nine">9</div>
+      </div>
+      <div class="text">TIME</div>
+      <div class="arrows">
+        <div class="hourhand"></div>
+        <div class="minutehand"></div>
+        <div class="secondhand"></div>
+      </div>
+    </div>
+  </body>
+  <script src="clockjs.js"></script>
+</html>
